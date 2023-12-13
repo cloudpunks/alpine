@@ -1,7 +1,7 @@
 ---
 repository:
-  name: auto-changelog
-  description: Docker images for auto-changelog
+  name: alpine
+  description: Docker images for alpine
   topics: docker, image
 
   private: false
