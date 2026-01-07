@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:edge@sha256:ea71a031ed91cd46b00d438876550bc765da43b4ae40f331a12daf62f0937758
 
 ENV TERM xterm
 
