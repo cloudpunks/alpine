@@ -8,8 +8,8 @@ name: docker
     branches:
       - master
     paths:
-      - latest/*
-      - .github/workflows/docker.yml
+      - v3.20/*
+      - .github/workflows/v3.20.yml
   pull_request:
     branches:
       - master
@@ -62,13 +62,13 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          context: latest/
-          file: latest/Dockerfile
+          context: v3.20/
+          file: v3.20/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: |
-            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:3.20
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
