@@ -1,4 +1,4 @@
-FROM alpine:3.22@sha256:87ba4a8b898045643099c4f2f8771dece62048755ecd2d6fc2ec4acdb95d2f2a
+FROM alpine:3.22@sha256:365499d9dccb7c8cfaffef995a6c382e71174585e0556f6476ead1c5971c39fb
 
 ENV TERM=xterm
 
